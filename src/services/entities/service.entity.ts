@@ -14,6 +14,9 @@ export class Service {
   @Column()
   description: string;
 
+  @Column({nullable: true})
+  photo: string;
+
   @Column({type: 'decimal', default: 0.00})
   price: number;
 
